@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 
 def map(lines):
@@ -6,6 +7,7 @@ def map(lines):
     i.e. year and amount. for output we add 1 as counter for average calculations in reducer.
     :return: handle by hadoop
     '''
+    #line = '1971/10/09,M,Zachery,Mounter,zmounter9@cnbc.com,Poland,Ford,$8635.19'
     for line in lines:
         words = line.split(",")
         year = words[0].split("/")[0]
